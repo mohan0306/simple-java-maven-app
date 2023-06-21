@@ -10,6 +10,11 @@ pipeline{
             }
                
         }
+        stage('continuous build') {
+            steps {
+                sh 'mvn clean install'
+            }
+        }
 }
    
 }
