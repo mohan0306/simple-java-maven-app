@@ -17,7 +17,7 @@ pipeline{
         }
             stage('continuous deploy') {
             steps {
-                sh 'cp /root/.jenkins/workspace/Demo_tomcat/gameoflife-web/target/gameoflife.war /mnt/apache-tomcat-9.0.71/webapps'
+                sh 'cp /root/.jenkins/workspace/Jenkinsfile/target/my-app-1.0-SNAPSHOT.jar /root/apache/apache-tomcat-9.0.75/webapps'
 //                 sh 'cp /root/.jenkins/workspace/Game_Of_life/gameoflife-web/target/gameoflife.war /home/ansible'
 //              sh 'scp /root/.jenkins/workspace/Game_Of_life/gameoflife-web/target/gameoflife.war ansible@172.31.86.205:/mnt'
             }
