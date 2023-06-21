@@ -1,5 +1,5 @@
 
-currentBuild.displayName = "Game-of-Life-#"+currentBuild.number
+currentBuild.displayName = "simple-java-maven-app-#"+currentBuild.number
 pipeline{
     agent any
     
